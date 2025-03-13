@@ -1,0 +1,1373 @@
+{
+	"info": {
+		"_postman_id": "d2a9cc0f-af24-4631-8235-0e61319652e0",
+		"name": "SistemaVentas-IDBi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30369445"
+	},
+	"item": [
+		{
+			"name": "Administrador",
+			"item": [
+				{
+					"name": "Vendedor",
+					"item": [
+						{
+							"name": "Producto",
+							"item": [
+								{
+									"name": "Listar",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxODkyMjM4LCJleHAiOjE3NDE4OTU4MzgsIm5iZiI6MTc0MTg5MjIzOCwianRpIjoiUXVCcllQV3JHbTBjMnNnMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.PHaYmezCbflL5pA8Br0QZzUcNjN5XSptRTfQNCU5RTk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Cache-Control",
+												"value": "no-cache",
+												"name": "cache-control",
+												"type": "text"
+											},
+											{
+												"key": "Postman-Token",
+												"value": "<calculated when request is sent>",
+												"name": "postman-token",
+												"type": "text"
+											},
+											{
+												"key": "Host",
+												"value": "<calculated when request is sent>",
+												"name": "host",
+												"type": "text"
+											},
+											{
+												"key": "User-Agent",
+												"value": "PostmanRuntime/7.39.1",
+												"name": "user-agent",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*",
+												"name": "accept",
+												"type": "text"
+											},
+											{
+												"key": "Accept-Encoding",
+												"value": "gzip, deflate, br",
+												"name": "accept-encoding",
+												"type": "text"
+											},
+											{
+												"key": "Connection",
+												"value": "keep-alive",
+												"name": "connection",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/products",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"products"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Consultar",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxOTAwNjA2LCJleHAiOjE3NDE5MDQyMDYsIm5iZiI6MTc0MTkwMDYwNiwianRpIjoiREFGODk3MFRxcldpN3llSyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.k8snjJhjTzxTsu9UTFpp2dRJbeXEKi9I9-dthwD1Fks",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Cache-Control",
+												"value": "no-cache",
+												"name": "cache-control",
+												"type": "text"
+											},
+											{
+												"key": "Postman-Token",
+												"value": "<calculated when request is sent>",
+												"name": "postman-token",
+												"type": "text"
+											},
+											{
+												"key": "Host",
+												"value": "<calculated when request is sent>",
+												"name": "host",
+												"type": "text"
+											},
+											{
+												"key": "User-Agent",
+												"value": "PostmanRuntime/7.39.1",
+												"name": "user-agent",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*",
+												"name": "accept",
+												"type": "text"
+											},
+											{
+												"key": "Accept-Encoding",
+												"value": "gzip, deflate, br",
+												"name": "accept-encoding",
+												"type": "text"
+											},
+											{
+												"key": "Connection",
+												"value": "keep-alive",
+												"name": "connection",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/products/1",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"products",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Agregar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxODkyMjM4LCJleHAiOjE3NDE4OTU4MzgsIm5iZiI6MTc0MTg5MjIzOCwianRpIjoiUXVCcllQV3JHbTBjMnNnMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.PHaYmezCbflL5pA8Br0QZzUcNjN5XSptRTfQNCU5RTk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Cache-Control",
+												"value": "no-cache",
+												"name": "cache-control",
+												"type": "text"
+											},
+											{
+												"key": "Postman-Token",
+												"value": "<calculated when request is sent>",
+												"name": "postman-token",
+												"type": "text"
+											},
+											{
+												"key": "Host",
+												"value": "<calculated when request is sent>",
+												"name": "host",
+												"type": "text"
+											},
+											{
+												"key": "User-Agent",
+												"value": "PostmanRuntime/7.39.1",
+												"name": "user-agent",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*",
+												"name": "accept",
+												"type": "text"
+											},
+											{
+												"key": "Accept-Encoding",
+												"value": "gzip, deflate, br",
+												"name": "accept-encoding",
+												"type": "text"
+											},
+											{
+												"key": "Connection",
+												"value": "keep-alive",
+												"name": "connection",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"sku\": \"PROD123\",\r\n    \"nombre\": \"Laptop Gamer\",\r\n    \"precio_unitario\": 2500.50,\r\n    \"stock\": 10\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/products",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"products"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Editar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxODkyNDc5LCJleHAiOjE3NDE4OTYwNzksIm5iZiI6MTc0MTg5MjQ3OSwianRpIjoiczJyVlZSSThVTWhQWW43aSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Kspc809piTMxU76VAFdwvI22ejjbAYb2ztAt575gxT0",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Cache-Control",
+												"value": "no-cache",
+												"name": "cache-control",
+												"type": "text"
+											},
+											{
+												"key": "Postman-Token",
+												"value": "<calculated when request is sent>",
+												"name": "postman-token",
+												"type": "text"
+											},
+											{
+												"key": "Host",
+												"value": "<calculated when request is sent>",
+												"name": "host",
+												"type": "text"
+											},
+											{
+												"key": "User-Agent",
+												"value": "PostmanRuntime/7.39.1",
+												"name": "user-agent",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*",
+												"name": "accept",
+												"type": "text"
+											},
+											{
+												"key": "Accept-Encoding",
+												"value": "gzip, deflate, br",
+												"name": "accept-encoding",
+												"type": "text"
+											},
+											{
+												"key": "Connection",
+												"value": "keep-alive",
+												"name": "connection",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"sku\": \"PROD123\",\r\n    \"nombre\": \"Laptop Gamer Pro\",\r\n    \"precio_unitario\": 2800.00,\r\n    \"stock\": 8\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/products/52",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"products",
+												"52"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Eliminar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxODkyMjM4LCJleHAiOjE3NDE4OTU4MzgsIm5iZiI6MTc0MTg5MjIzOCwianRpIjoiUXVCcllQV3JHbTBjMnNnMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.PHaYmezCbflL5pA8Br0QZzUcNjN5XSptRTfQNCU5RTk",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Cache-Control",
+												"value": "no-cache",
+												"name": "cache-control",
+												"type": "text"
+											},
+											{
+												"key": "Postman-Token",
+												"value": "<calculated when request is sent>",
+												"name": "postman-token",
+												"type": "text"
+											},
+											{
+												"key": "Host",
+												"value": "<calculated when request is sent>",
+												"name": "host",
+												"type": "text"
+											},
+											{
+												"key": "User-Agent",
+												"value": "PostmanRuntime/7.39.1",
+												"name": "user-agent",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*",
+												"name": "accept",
+												"type": "text"
+											},
+											{
+												"key": "Accept-Encoding",
+												"value": "gzip, deflate, br",
+												"name": "accept-encoding",
+												"type": "text"
+											},
+											{
+												"key": "Connection",
+												"value": "keep-alive",
+												"name": "connection",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/products/52",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"products",
+												"52"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Venta",
+							"item": [
+								{
+									"name": "Listar (Puede ser reporte json)",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxOTAyMDc5LCJleHAiOjE3NDE5MDU2NzksIm5iZiI6MTc0MTkwMjA3OSwianRpIjoicFQ0c0hmcGo1UUl6N3FjUyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jsSL3lXT2-_qNgR4HTsxTgnycdxHYBc4PdFSaq3dWNw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Cache-Control",
+												"value": "no-cache",
+												"name": "cache-control",
+												"type": "text"
+											},
+											{
+												"key": "Postman-Token",
+												"value": "<calculated when request is sent>",
+												"name": "postman-token",
+												"type": "text"
+											},
+											{
+												"key": "Host",
+												"value": "<calculated when request is sent>",
+												"name": "host",
+												"type": "text"
+											},
+											{
+												"key": "User-Agent",
+												"value": "PostmanRuntime/7.39.1",
+												"name": "user-agent",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*",
+												"name": "accept",
+												"type": "text"
+											},
+											{
+												"key": "Accept-Encoding",
+												"value": "gzip, deflate, br",
+												"name": "accept-encoding",
+												"type": "text"
+											},
+											{
+												"key": "Connection",
+												"value": "keep-alive",
+												"name": "connection",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/ventas",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"ventas"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Consultar",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxOTAyMDc5LCJleHAiOjE3NDE5MDU2NzksIm5iZiI6MTc0MTkwMjA3OSwianRpIjoicFQ0c0hmcGo1UUl6N3FjUyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jsSL3lXT2-_qNgR4HTsxTgnycdxHYBc4PdFSaq3dWNw",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Cache-Control",
+												"value": "no-cache",
+												"name": "cache-control",
+												"type": "text"
+											},
+											{
+												"key": "Postman-Token",
+												"value": "<calculated when request is sent>",
+												"name": "postman-token",
+												"type": "text"
+											},
+											{
+												"key": "Host",
+												"value": "<calculated when request is sent>",
+												"name": "host",
+												"type": "text"
+											},
+											{
+												"key": "User-Agent",
+												"value": "PostmanRuntime/7.39.1",
+												"name": "user-agent",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*",
+												"name": "accept",
+												"type": "text"
+											},
+											{
+												"key": "Accept-Encoding",
+												"value": "gzip, deflate, br",
+												"name": "accept-encoding",
+												"type": "text"
+											},
+											{
+												"key": "Connection",
+												"value": "keep-alive",
+												"name": "connection",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/ventas/4",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"ventas",
+												"4"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Agregar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxODk5MTQwLCJleHAiOjE3NDE5MDI3NDAsIm5iZiI6MTc0MTg5OTE0MCwianRpIjoiMlp4OGtrUlRMc1NLa0F6NCIsInN1YiI6IjciLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0WIjyUJbpmdiFYfnXisZigEMydHLwaTZNQY4zyWew0E",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Cache-Control",
+												"value": "no-cache",
+												"name": "cache-control",
+												"type": "text"
+											},
+											{
+												"key": "Postman-Token",
+												"value": "<calculated when request is sent>",
+												"name": "postman-token",
+												"type": "text"
+											},
+											{
+												"key": "Host",
+												"value": "<calculated when request is sent>",
+												"name": "host",
+												"type": "text"
+											},
+											{
+												"key": "User-Agent",
+												"value": "PostmanRuntime/7.39.1",
+												"name": "user-agent",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*",
+												"name": "accept",
+												"type": "text"
+											},
+											{
+												"key": "Accept-Encoding",
+												"value": "gzip, deflate, br",
+												"name": "accept-encoding",
+												"type": "text"
+											},
+											{
+												"key": "Connection",
+												"value": "keep-alive",
+												"name": "connection",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codigo\": \"JEAV000\",\r\n    \"nombre_cl\": \"Juan Pérez\",\r\n    \"num_iden_cl\": \"12345678\",\r\n    \"correo_cl\": \"juan@example.com\",\r\n    \"user_id\": 1,\r\n    \"fecha_hora\": \"2024-03-13 14:00:00\",\r\n    \"detalles\": [\r\n        {\r\n            \"product_id\": 1,\r\n            \"cantidad\": 20\r\n        },\r\n        {\r\n            \"product_id\": 2,\r\n            \"cantidad\": 20\r\n        }\r\n    ]\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/ventas",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"ventas"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Editar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxODk5ODA2LCJleHAiOjE3NDE5MDM0MDYsIm5iZiI6MTc0MTg5OTgwNiwianRpIjoiU0E0RllMSmZZNFdoNlVkRSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ktj2VTXEqhyqk1iz-OVasWqZzy55QSfPhr1HgeGNBVI",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Cache-Control",
+												"value": "no-cache",
+												"name": "cache-control",
+												"type": "text"
+											},
+											{
+												"key": "Postman-Token",
+												"value": "<calculated when request is sent>",
+												"name": "postman-token",
+												"type": "text"
+											},
+											{
+												"key": "Host",
+												"value": "<calculated when request is sent>",
+												"name": "host",
+												"type": "text"
+											},
+											{
+												"key": "User-Agent",
+												"value": "PostmanRuntime/7.39.1",
+												"name": "user-agent",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*",
+												"name": "accept",
+												"type": "text"
+											},
+											{
+												"key": "Accept-Encoding",
+												"value": "gzip, deflate, br",
+												"name": "accept-encoding",
+												"type": "text"
+											},
+											{
+												"key": "Connection",
+												"value": "keep-alive",
+												"name": "connection",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codigo\": \"JAQV004\",\r\n    \"nombre_cl\": \"Juan Pérez\",\r\n    \"num_iden_cl\": \"12345678\",\r\n    \"correo_cl\": \"juan@example.com\",\r\n    \"user_id\": 1,\r\n    \"fecha_hora\": \"2024-03-13 14:00:00\",\r\n    \"detalles\": [\r\n        {\r\n            \"product_id\": 1,\r\n            \"cantidad\": 2\r\n        },\r\n        {\r\n            \"product_id\": 2,\r\n            \"cantidad\": 100\r\n        }\r\n    ]\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/ventas/4",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"ventas",
+												"4"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Eliminar",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxODk5ODA2LCJleHAiOjE3NDE5MDM0MDYsIm5iZiI6MTc0MTg5OTgwNiwianRpIjoiU0E0RllMSmZZNFdoNlVkRSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ktj2VTXEqhyqk1iz-OVasWqZzy55QSfPhr1HgeGNBVI",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Cache-Control",
+												"value": "no-cache",
+												"name": "cache-control",
+												"type": "text"
+											},
+											{
+												"key": "Postman-Token",
+												"value": "<calculated when request is sent>",
+												"name": "postman-token",
+												"type": "text"
+											},
+											{
+												"key": "Host",
+												"value": "<calculated when request is sent>",
+												"name": "host",
+												"type": "text"
+											},
+											{
+												"key": "User-Agent",
+												"value": "PostmanRuntime/7.39.1",
+												"name": "user-agent",
+												"type": "text"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*",
+												"name": "accept",
+												"type": "text"
+											},
+											{
+												"key": "Accept-Encoding",
+												"value": "gzip, deflate, br",
+												"name": "accept-encoding",
+												"type": "text"
+											},
+											{
+												"key": "Connection",
+												"value": "keep-alive",
+												"name": "connection",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"codigo\": \"JEAV001\",\r\n    \"nombre_cl\": \"Juan Pérez\",\r\n    \"num_iden_cl\": \"12345678\",\r\n    \"correo_cl\": \"juan@example.com\",\r\n    \"user_id\": 1,\r\n    \"monto_total\": 250,\r\n    \"fecha_hora\": \"2024-03-13 14:00:00\",\r\n    \"detalles\": [\r\n        {\r\n            \"product_id\": 1,\r\n            \"cantidad\": 2\r\n        },\r\n        {\r\n            \"product_id\": 2,\r\n            \"cantidad\": 1\r\n        }\r\n    ]\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/ventas/4",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"ventas",
+												"4"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Iniciar Sesión (Vendedor)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Content-Length",
+										"value": "0",
+										"name": "content-length",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.39.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"gaquinov@unprg.edu.pe\",\r\n    \"password\": \"gaquinov\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								},
+								"description": "Iniciar sessión con autenticación JWT, retorna token, tipo de token, tiempo de expiración, roles, permisos."
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Reportes",
+					"item": [
+						{
+							"name": "Excel",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxOTA0MjM5LCJleHAiOjE3NDE5MDc4MzksIm5iZiI6MTc0MTkwNDIzOSwianRpIjoiS3hsdDlaaDFVRHk3RGxSMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ky0_zyDV-2fQMWaHG_nr0XGiY2m2mhkiYF8VbJHXufc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"fecha_inicio\": \"2025-01-01\",\r\n  \"fecha_fin\": \"2025-01-31\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/reporte-ventas/xlsx",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"reporte-ventas",
+										"xlsx"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "JSON",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxOTA1NDEwLCJleHAiOjE3NDE5MDkwMTAsIm5iZiI6MTc0MTkwNTQxMCwianRpIjoiR29qVkR6dVlGQWh0aGFMdiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.G8zzqE--z3vSgQWvVLiORM7KHxX7Fv-6JNzYL-VARt4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.39.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"fecha_inicio\": \"1900-01-01\",\r\n  \"fecha_fin\": \"2025-01-31\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/reporte-ventas/json",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"reporte-ventas",
+										"json"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Iniciar Sesión (Admin)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"name": "cache-control",
+								"type": "text"
+							},
+							{
+								"key": "Postman-Token",
+								"value": "<calculated when request is sent>",
+								"name": "postman-token",
+								"type": "text"
+							},
+							{
+								"key": "Content-Length",
+								"value": "0",
+								"name": "content-length",
+								"type": "text"
+							},
+							{
+								"key": "Host",
+								"value": "<calculated when request is sent>",
+								"name": "host",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "PostmanRuntime/7.39.1",
+								"name": "user-agent",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*",
+								"name": "accept",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br",
+								"name": "accept-encoding",
+								"type": "text"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"name": "connection",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"jaquinov@unprg.edu.pe\",\r\n    \"password\": \"jaquinov\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						},
+						"description": "Iniciar sessión con autenticación JWT, retorna token, tipo de token, tiempo de expiración, roles, permisos."
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxOTAzMDEwLCJleHAiOjE3NDE5MDY2MTAsIm5iZiI6MTc0MTkwMzAxMCwianRpIjoiamt2NWtiQ2gxTVlQTzh4ZiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.a3wiwQ9tQct3LgJRl7TDbTY9OLT-vntCTYPY78Evs8U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Grecia\",\r\n    \"apellido\": \"Aquino Vasquez\",\r\n    \"email\": \"gaquinov@unprg.edu.pe\",\r\n    \"password\": \"gaquinov\",\r\n    \"rol\": \"vendedor\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						},
+						"description": "Datos requeridos, correo único."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cerrar Sesión",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxODg5Nzk3LCJleHAiOjE3NDE4OTMzOTcsIm5iZiI6MTc0MTg4OTc5NywianRpIjoiU1FER3RMWnlSb05zcjdWNCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.mTiIyvEPSV8cI9YrU9zVOqXr3kTvuDG2Agw0WULbfos",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Usuario Auth",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQxODkxMzIyLCJleHAiOjE3NDE4OTQ5MjIsIm5iZiI6MTc0MTg5MTMyMiwianRpIjoibXhvZ3JMWnZWT0lCOXB4USIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.w3OyS9FcoqBI6O-iQzbVsV4Hf5MIZA1arvatxDdBgME",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
