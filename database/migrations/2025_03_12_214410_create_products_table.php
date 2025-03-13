@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('sku')->unique();
             $table->text('nombre');
-            $table->decimal('precio_unitario', 10, 2); // Cambiado a decimal
+            $table->decimal('precio_unitario', 10, 2);
             $table->integer('stock');
             $table->timestamps();
         });

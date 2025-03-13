@@ -13,20 +13,19 @@ class AuthController extends Controller
 {
     public function register(Request $request)
     {
-        // Validación de los datos
+   
         $request->validate([
             'nombre'     => 'required|string',
             'apellido'   => 'required|string',
             'email'      => 'required|string|email|unique:users,email',
             'password'   => 'required|string|min:8',
-            'rol'        => 'required|string|exists:roles,name', // Verifica que el rol exista en la tabla roles
+            'rol'        => 'required|string|exists:roles,name', 
         ]);
 
-        // Iniciar una transacción
+   
         DB::beginTransaction();
 
         try {
-            // Creación del usuario
             $user = User::create([
                 'nombre'   => $request->nombre,
                 'apellido' => $request->apellido,
@@ -34,10 +33,10 @@ class AuthController extends Controller
                 'password' => Hash::make($request->password),
             ]);
 
-            // Asignar el rol al usuario
+          
             $user->assignRole($request->rol);
 
-            // Confirmar la transacción
+   
             DB::commit();
 
             return response()->json([
@@ -45,7 +44,6 @@ class AuthController extends Controller
                 'user'    => $user,
             ], 201);
         } catch (\Exception $e) {
-            // En caso de error, hacer rollback
             DB::rollBack();
 
             return response()->json([
@@ -74,8 +72,8 @@ class AuthController extends Controller
             'token' => $token,
             'token_type' => 'bearer',
             'expires_in' => JWTAuth::factory()->getTTL() * 60,
-            'roles' => $user->getRoleNames(), // Los roles del usuario
-            'permissions' => $user->getAllPermissions()->pluck('name'), // Solo los nombres de los permisos
+            'roles' => $user->getRoleNames(),
+            'permissions' => $user->getAllPermissions()->pluck('name'), 
         ]);
     }
 
