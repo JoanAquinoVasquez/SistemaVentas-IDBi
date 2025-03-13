@@ -1,31 +1,58 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 use Tymon\JWTAuth\Facades\JWTAuth;
+use Spatie\Permission\Models\Role;
 
 class AuthController extends Controller
 {
     public function register(Request $request)
     {
+        // Validación de los datos
         $request->validate([
-            'name'     => 'required|string',
-            'email'    => 'required|string|email|unique:users,email',
-            'password' => 'required|string|min:8',
+            'nombre'     => 'required|string',
+            'apellido'   => 'required|string',
+            'email'      => 'required|string|email|unique:users,email',
+            'password'   => 'required|string|min:8',
+            'rol'        => 'required|string|exists:roles,name', // Verifica que el rol exista en la tabla roles
         ]);
 
-        $user = User::create([
-            'name'     => $request->name,
-            'email'    => $request->email,
-            'password' => Hash::make($request->password),
-        ]);
+        // Iniciar una transacción
+        DB::beginTransaction();
 
-        return response()->json([
-            'message' => 'Usuario creado correctamente.',
-            'user'    => $user,
-        ], 201);
+        try {
+            // Creación del usuario
+            $user = User::create([
+                'nombre'   => $request->nombre,
+                'apellido' => $request->apellido,
+                'email'    => $request->email,
+                'password' => Hash::make($request->password),
+            ]);
+
+            // Asignar el rol al usuario
+            $user->assignRole($request->rol);
+
+            // Confirmar la transacción
+            DB::commit();
+
+            return response()->json([
+                'message' => 'Usuario creado correctamente.',
+                'user'    => $user,
+            ], 201);
+        } catch (\Exception $e) {
+            // En caso de error, hacer rollback
+            DB::rollBack();
+
+            return response()->json([
+                'message' => 'Error al registrar el usuario.',
+                'error'   => $e->getMessage(),
+            ], 500);
+        }
     }
 
     public function login(Request $request)
@@ -38,10 +65,18 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (! $token = JWTAuth::attempt($credentials)) {
-            return response()->json(['error' => 'No tienes autorizacion.'], 401);
+            return response()->json(['error' => 'Credenciales incorrectas.'], 401);
         }
 
-        return response()->json(compact('token'));
+        $user = JWTAuth::user();
+
+        return response()->json([
+            'token' => $token,
+            'token_type' => 'bearer',
+            'expires_in' => JWTAuth::factory()->getTTL() * 60,
+            'roles' => $user->getRoleNames(), // Los roles del usuario
+            'permissions' => $user->getAllPermissions()->pluck('name'), // Solo los nombres de los permisos
+        ]);
     }
 
     public function logout()
