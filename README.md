@@ -53,7 +53,7 @@ API de ventas que permite la gestión de productos, vendedores y ventas.
 - users: usuarios (admin y vendedores)
 - sales: ventas
 - products: productos
-- sales_products: productos por venta
+- detalle_venta: productos por venta
 
 ## Postman
 Importar la colección de Postman:
@@ -66,4 +66,4 @@ Importar la colección de Postman:
 4. Inicia las pruebas 🚀
 
 ## Video explicativo
-[Video aquí]()
+[Video aquí](https://drive.google.com/file/d/1F52bdvhCj1Nkz0HhNpacfDNy3Oovg6ji/view?usp=sharing)
